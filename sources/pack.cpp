@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
   try {
     string Path = argv[1];
     Person file = getInfo();
-    YAML::Node node;
+    YAML::Node node;//оператор разрешения области видимости.Данный оператор можно применять к типам и пространствам имен(класс YAML содержит в себе объект node класса Node)
     node["person"]["First name"] = file.first_name;
     node["person"]["Last name"] = file.last_name;
     node["person"]["Email"] = file.email.nickname;
