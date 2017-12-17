@@ -14,6 +14,5 @@ script:
 - cmake -H. -B_build 
 - cmake --build _build
 - cd _build
-- ./pack config.yaml
-- cat config.yaml
-- ./unpack config.yaml
+- ./pack pack
+- ./unpack pack
