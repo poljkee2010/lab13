@@ -21,14 +21,19 @@ struct Person {
 Person getInfo() {
 	struct Person file;
 	cout << "Enter data to fields of the Person structure." << endl;
+	
 	cout << "First name:" << endl;
 	cin >> file.first_name;
+	
 	cout << "Last name:" << endl;
 	cin >> file.last_name;
+	
 	cout << "Email:" << endl;
 	cin >> file.email.nickname;
+	
 	cout << "Age:" << endl;
 	cin >> file.age;
+	
 	cout << "Phone:" << endl;
 	cin >> file.phone;
   return file;
