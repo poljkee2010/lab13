@@ -1,5 +1,5 @@
 # Задание
-
+[![Build Status](https://travis-ci.org/poljkee2010/lab13.svg?branch=master)](https://travis-ci.org/poljkee2010/lab13)
 Написать программы на **C++** для сериализации и десериализации структуры `Person`.
 
 Структура `Person` определяется следующим образом:
