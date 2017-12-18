@@ -58,7 +58,7 @@ Age:        19
 Phone:      8(495)328-96-92
 ```
 
-## Проверка валидности через сайт http://www.yamllint.com/ :
+## Проверка валидности :
 ```
 First name: Alex
 Last name: Ananikyan
