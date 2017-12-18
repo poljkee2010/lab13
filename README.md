@@ -28,7 +28,6 @@ https://github.com/jbeder/yaml-cpp
 ```
 $ cmake -H. -B_build
 $ cmake --build _build
-Заходим в "построенное"
 $ cd _build/
 $ ./pack <путь_к_файлу.yaml>
 Вводим параметры
