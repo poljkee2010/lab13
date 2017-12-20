@@ -28,12 +28,11 @@ int main(int argc, char* argv[])
   
     YAML::Node file = YAML::LoadFile(path);
 
-      cout << "[Person]" << endl;
-      cout << "First name: " << file.first_name << endl;
-      cout << "Last name:  " << file.last_name << endl;
-      cout << "Email:      " << file.email.nickname << endl;
-      cout << "Age:        " << file.age << endl;
-      cout << "Phone:      " << file.phone << endl;
+    cout << "First name: " << file["First name"] << "\n";
+    cout << "Last name:  " << file["Last name"] << "\n";
+    cout << "Email:" << "\n" << file["Email"] << "\n";
+    cout << "Phone:      " << file["Phone"] << "\n";
+    cout << "Age:        " << file["Age"] << "\n";
   }
   catch(const exception& e) {
     cout << e.what() << endl;
