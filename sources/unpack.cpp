@@ -21,16 +21,12 @@ struct Person {
 
 int main(int argc, char* argv[])
 {
-   try {
-      string Path = argv[1];
-      Person file;
-
-      YAML::Node node2 = YAML::LoadFile(Path);
-      file.first_name = node2["person"]["First name"].as<std::string>();
-      file.last_name = node2["person"]["Last name"].as<std::string>();
-      file.email.nickname = node2["person"]["Email"].as<std::string>();
-      file.age = node2["person"]["Age"].as<size_t>();
-      file.phone= node2["person"]["Phone"].as<std::string>();
+   try {     
+    string path = argv[1];
+    
+    ifstream fin(path);
+  
+    YAML::Node file = YAML::LoadFile(path);
 
       cout << "[Person]" << endl;
       cout << "First name: " << file.first_name << endl;
